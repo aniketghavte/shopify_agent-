@@ -49,7 +49,7 @@ class Settings(BaseSettings):
     port: int = Field(default=8000)
     log_level: str = Field(default="INFO")
     cors_origins: str = Field(
-        default="http://localhost:5173,http://127.0.0.1:5173",
+        default="http://localhost:5173,http://127.0.0.1:5173,https://shopify-agent-eosin.vercel.app/",
         description="Comma-separated list of allowed origins.",
     )
 
